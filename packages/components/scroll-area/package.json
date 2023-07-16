@@ -1,0 +1,60 @@
+{
+  "name": "@yopun-ui/react-scroll-area",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "scroll-area",
+    "react",
+    "ui",
+    "tailwindcss",
+    "yopun-ui"
+  ],
+  "author": "Karyana Yandi <karyana@yandi.me>",
+  "homepage": "https://github.com/yopundotcom/yopun-ui#readme",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yopundotcom/yopun-ui.git",
+    "directory": "packages/components/scroll-area"
+  },
+  "bugs": {
+    "url": "https://github.com/yopundotcom/yopun-ui/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "dev": "pnpm build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup src",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "dependencies": {
+    "@yopun-ui/react-classname-utils": "workspace:*",
+    "@radix-ui/react-scroll-area": "^1.0.4"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "clean-package": "2.2.0",
+    "react": "^18.2.0"
+  },
+  "clean-package": "../../../clean-package.config.json",
+  "tsup": {
+    "clean": true,
+    "target": "es2020",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  }
+}

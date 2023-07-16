@@ -1,0 +1,97 @@
+{
+  "name": "@yopun-ui/react",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "react",
+    "react",
+    "ui",
+    "tailwindcss",
+    "yopun-ui"
+  ],
+  "author": "Karyana Yandi <karyana@yandi.me>",
+  "homepage": "https://github.com/yopundotcom/yopun-ui#readme",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yopundotcom/yopun-ui.git",
+    "directory": "packages/components/react"
+  },
+  "bugs": {
+    "url": "https://github.com/yopundotcom/yopun-ui/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "dev": "pnpm build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup src",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "dependencies": {
+    "@yopun-ui/react-accordion": "workspace:^",
+    "@yopun-ui/react-alert": "workspace:^",
+    "@yopun-ui/react-alert-dialog": "workspace:^",
+    "@yopun-ui/react-avatar": "workspace:*",
+    "@yopun-ui/react-badge": "workspace:^",
+    "@yopun-ui/react-breadcrumb": "workspace:^",
+    "@yopun-ui/react-button": "workspace:^",
+    "@yopun-ui/react-calendar": "workspace:^",
+    "@yopun-ui/react-card": "workspace:^",
+    "@yopun-ui/react-checkbox": "workspace:^",
+    "@yopun-ui/react-children-utils": "workspace:^",
+    "@yopun-ui/react-classname-utils": "workspace:*",
+    "@yopun-ui/react-collapsible": "workspace:^",
+    "@yopun-ui/react-command": "workspace:^",
+    "@yopun-ui/react-dialog": "workspace:^",
+    "@yopun-ui/react-drawer": "workspace:^",
+    "@yopun-ui/react-drop-zone": "workspace:^",
+    "@yopun-ui/react-dropdown-menu": "workspace:^",
+    "@yopun-ui/react-editor": "workspace:^",
+    "@yopun-ui/react-form": "workspace:^",
+    "@yopun-ui/react-hover-card": "workspace:^",
+    "@yopun-ui/react-icon": "workspace:^",
+    "@yopun-ui/react-menubar": "workspace:^",
+    "@yopun-ui/react-navigation-menu": "workspace:^",
+    "@yopun-ui/react-popover": "workspace:^",
+    "@yopun-ui/react-progress": "workspace:^",
+    "@yopun-ui/react-radio-group": "workspace:^",
+    "@yopun-ui/react-scroll-area": "workspace:^",
+    "@yopun-ui/react-select": "workspace:^",
+    "@yopun-ui/react-separator": "workspace:^",
+    "@yopun-ui/react-skeleton": "workspace:^",
+    "@yopun-ui/react-slider": "workspace:^",
+    "@yopun-ui/react-switch": "workspace:^",
+    "@yopun-ui/react-table": "workspace:^",
+    "@yopun-ui/react-tabs": "workspace:^",
+    "@yopun-ui/react-textarea": "workspace:^",
+    "@yopun-ui/react-toast": "workspace:^",
+    "@yopun-ui/react-toggle": "workspace:^",
+    "@yopun-ui/react-tooltip": "workspace:^"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "clean-package": "2.2.0",
+    "react": "^18.2.0"
+  },
+  "clean-package": "../../clean-package.config.json",
+  "tsup": {
+    "clean": true,
+    "target": "es2020",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  }
+}
