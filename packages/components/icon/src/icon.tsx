@@ -2,6 +2,7 @@ import { FaPinterestP, FaWhatsapp } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
 import {
   LuBold,
+  LuBookOpen,
   LuCalendar,
   LuCheck,
   LuChevronDown,
@@ -36,6 +37,7 @@ import {
   LuInfo,
   LuInstagram,
   LuItalic,
+  LuLaptop2,
   LuLink,
   LuLinkedin,
   LuList,
@@ -130,6 +132,7 @@ export const Icon = {
   IndonesiaFlag: IndonesiaFlag,
   Info: LuInfo,
   Instagram: LuInstagram,
+  Laptop: LuLaptop2,
   Light: LuSun,
   Link: LuLink,
   Linkedin: LuLinkedin,
@@ -144,6 +147,7 @@ export const Icon = {
   PanelRightClose: LuPanelRightClose,
   Person: LuUser,
   Pinterest: FaPinterestP,
+  Read: LuBookOpen,
   Report: LuInfo,
   Save: LuSave,
   Setting: LuSettings,
